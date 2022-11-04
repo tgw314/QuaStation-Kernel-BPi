@@ -13,7 +13,8 @@
 		status = "okay";
 
 		dwc3_drd@98020000 {
-			dr_mode = "peripheral"; /*host, peripheral*/
+			/*dr_mode = "peripheral";*/ /*host, peripheral*/
+			dr_mode = "host"; /*host, peripheral*/
 		};
 
 		rtk_dwc3_drd_type_c@0 {
