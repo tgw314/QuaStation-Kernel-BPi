@@ -28,7 +28,7 @@ docker-image:
 	@echo '--------------------------------------------------------------------------------'
 
 build:
-	docker run --rm -i -t -v `pwd`:/build/ quastation-kernel-bpi /bin/bash -c 'make build-in-container'
+	docker run --rm -v `pwd`:/build/ quastation-kernel-bpi /bin/bash -c 'make build-in-container'
 
 build-in-container:
 	@echo '--------------------------------------------------------------------------------'
